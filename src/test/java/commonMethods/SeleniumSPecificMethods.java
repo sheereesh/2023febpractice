@@ -84,7 +84,7 @@ public static String get_TextLable(WebElement elelment) {
 	
 }
 
-//dropdown
+//dropdown ====================================
 public static void selectMultipleOptionsFromDropdownByVisibleText(WebElement element_DropDown,List<String> values) {
 	Select select=new Select(element_DropDown);
 	for(String value:values) {
@@ -151,8 +151,27 @@ public static void selectFromDropDown(WebElement element,String howTo,List<Strin
 			
 		}
 	}
+public static void selectFromDropDownByIndex(WebElement element_dropDown,int index)
+{
+	Select select=new Select(element_dropDown);
+	select.selectByIndex(index);
 	
 }
+
+public static void selectFromDropDownByValue(WebElement element,String value) {
+	Select select=new Select(element);
+	select.selectByValue(value);
+}
+
+public static void selectFromDropDownByVisibleText(WebElement element,String value) {
+	Select select=new Select(element);
+	select.selectByVisibleText(value);
+}
+}
+
+
+
+
 
  
 
