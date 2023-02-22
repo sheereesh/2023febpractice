@@ -2,8 +2,7 @@ package hooks;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-
+import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,6 +11,7 @@ import utility.DriverManager;
 import utility.ScreenShot;
 
 public class Hooks {
+	private static WebDriver driver;
 	private static DriverManager obj_DriverManger;
 private static  final Logger LOGGER=LogManager.getLogger(Hooks.class);
 @Before
@@ -34,7 +34,7 @@ obj_DriverManger=new DriverManager();
 	
 	
 }
-	@After
+	@After(order=0)
 	public void takeAndAttachScreenShotsToReports(Scenario scenario ) {
 		
 		
@@ -47,8 +47,14 @@ obj_DriverManger=new DriverManager();
 			}
 			
 		}
-		
-		
 	}
-
+		//with out thread sleep we cant see the process clearly for understand purpose it was like that
+	//@After(order=1)
+	//public void closeBrowser() throws InterruptedException {
+	////	Thread.sleep(5000);
+		//DriverManager.closeBrowser();
+		
+	//}
+	
 }
+

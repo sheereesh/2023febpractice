@@ -1,11 +1,13 @@
+stepDefinitions\SeleniumExamplePage_SD.class
 pages\HomePage.class
 utility\Constants.class
 utility\PropertyReader.class
 utility\DriverManager.class
 commonMethods\ProjectSpecificMethods.class
+pages\SeleniumExamplePage.class
 utility\ScreenShot.class
 commonMethods\SeleniumSPecificMethods.class
 utility\ExcelReader.class
-stepDefinitions\StepDefintions.class
+stepDefinitions\HomePage_SD.class
 testRuns\TestRunner.class
 hooks\Hooks.class
