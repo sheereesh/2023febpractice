@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>practice practice</name>
   <description>its all about project practice</description>
- <build>
+  <build>
 <plugins>
 <plugin>
 
@@ -50,7 +50,7 @@
  <execution>
  <configuration>
         <includes>
-        <include>**/Test_Run_All.java</include>
+        <include>**/TestRunner.java</include>
         </includes>
         
         </configuration>
@@ -147,10 +147,6 @@
 </dependencies>
   
 </project>
-
-
-
-
-
-
+  
+  
  
