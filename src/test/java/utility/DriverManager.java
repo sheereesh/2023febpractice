@@ -27,7 +27,7 @@ public class DriverManager {
 		return driver;
 	}
 	
-	public static WebDriver openUrl(WebDriver driver) {
+	public  WebDriver openUrl(WebDriver driver) {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		driver.get(getPropertiesFromPropertyReader.getProperty("url"));
 		return driver;
@@ -38,7 +38,7 @@ public class DriverManager {
 		driver.close();
 	}
 	
-	public static WebDriver  launchBrowser() {
+	public  WebDriver  launchBrowser() {
 		
 	 	 getPropertiesFromPropertyReader=PropertyReader.getProperties(Constants.get_Browser_Url_Properties_Filename());
 	 	 try {
@@ -106,7 +106,6 @@ public class DriverManager {
 		 
 	}
 	
-	Actions pb=new Actions(driver);
 	
 	
 	

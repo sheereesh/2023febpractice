@@ -26,7 +26,7 @@ public class ScreenShot {
 File screenShotWithScenarioName=((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 String scenarioName=scenario.getName().replace(" ","_");
 Date date=new Date();
-SimpleDateFormat obj_SimpleDateFormat=new SimpleDateFormat("dd-mm-yyyy");
+SimpleDateFormat obj_SimpleDateFormat=new SimpleDateFormat("dd-MM-yyyy");
 String string_Date=obj_SimpleDateFormat.format(date);
 File destination_Path=new File(System.getProperty("user.dir")+"/screenshots/"+scenarioName+" "+string_Date+".png");
 //add to path if doest not work
