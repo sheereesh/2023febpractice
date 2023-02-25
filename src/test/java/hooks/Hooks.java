@@ -2,8 +2,7 @@ package hooks;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-
+import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,16 +11,18 @@ import utility.DriverManager;
 import utility.ScreenShot;
 
 public class Hooks {
+	private static WebDriver driver;
 	private static DriverManager obj_DriverManger;
 private static  final Logger LOGGER=LogManager.getLogger(Hooks.class);
 @Before
 
-public void openUrlandBrowser() {
+public void openUrlandBrowser()  {
 	LOGGER.info("invoking the browser");
 obj_DriverManger=new DriverManager();
 	
 	
 	if(DriverManager.getDriver()==null) {
+		
 		obj_DriverManger.openUrl(obj_DriverManger.launchBrowser());
 		 
 		 LOGGER.info("url opend");
@@ -34,7 +35,7 @@ obj_DriverManger=new DriverManager();
 	
 	
 }
-	@After
+	@After(order=1)
 	public void takeAndAttachScreenShotsToReports(Scenario scenario ) {
 		
 		
@@ -47,8 +48,18 @@ obj_DriverManger=new DriverManager();
 			}
 			
 		}
-		
-		
 	}
-
+		//with out thread sleep we cant see the process clearly for understand purpose it was like that
+	//@After(order=0)
+	//public void closeBrowser()  {
+		//Thread.sleep(5000);
+		//DriverManager.closeBrowser();
+		
+	//}
+	//@After(order=0)
+	//public void closeBrowser() {
+	//DriverManager.closeBrowser();
+	//}
+	
 }
+

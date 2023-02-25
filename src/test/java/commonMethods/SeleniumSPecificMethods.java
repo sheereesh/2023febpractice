@@ -68,7 +68,7 @@ button.click();
 
 LOGGER.info("Clicked on the button"+button_text);
 	}
-	public static void enterText_TextField(WebElement textbox,String dataToEnter) {
+	public static void enterText_TextField(WebElement textbox, String dataToEnter) {
 	
 	textbox.sendKeys(dataToEnter);
 	if(textbox.getText().equals(dataToEnter)) {
