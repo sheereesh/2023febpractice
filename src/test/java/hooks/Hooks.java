@@ -16,12 +16,13 @@ public class Hooks {
 private static  final Logger LOGGER=LogManager.getLogger(Hooks.class);
 @Before
 
-public void openUrlandBrowser() {
+public void openUrlandBrowser()  {
 	LOGGER.info("invoking the browser");
 obj_DriverManger=new DriverManager();
 	
 	
 	if(DriverManager.getDriver()==null) {
+		
 		obj_DriverManger.openUrl(obj_DriverManger.launchBrowser());
 		 
 		 LOGGER.info("url opend");
@@ -34,7 +35,7 @@ obj_DriverManger=new DriverManager();
 	
 	
 }
-	@After(order=0)
+	@After(order=1)
 	public void takeAndAttachScreenShotsToReports(Scenario scenario ) {
 		
 		
@@ -49,11 +50,15 @@ obj_DriverManger=new DriverManager();
 		}
 	}
 		//with out thread sleep we cant see the process clearly for understand purpose it was like that
-	//@After(order=1)
-	//public void closeBrowser() throws InterruptedException {
-	////	Thread.sleep(5000);
+	//@After(order=0)
+	//public void closeBrowser()  {
+		//Thread.sleep(5000);
 		//DriverManager.closeBrowser();
 		
+	//}
+	//@After(order=0)
+	//public void closeBrowser() {
+	//DriverManager.closeBrowser();
 	//}
 	
 }

@@ -8,8 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import commonMethods.SeleniumSPecificMethods;
 
 public class HomePage {
-	
+	WebDriver driver;
 public   HomePage(WebDriver driver) {
+	this.driver=driver;
 	PageFactory.initElements(driver,this);
 }
 @FindBy(xpath = "//a[contains(text(),'Selenium Example Page')]" )

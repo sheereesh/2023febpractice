@@ -1,6 +1,7 @@
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\testRuns\TestRunner.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\utility\DriverManager.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\pages\SeleniumExamplePage.java
+C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\stepDefinitions\DataDriven_SD.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\utility\ExcelReader.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\stepDefinitions\HomePage_SD.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\pages\HomePage.java
@@ -10,4 +11,6 @@ C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\stepDefinit
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\commonMethods\ProjectSpecificMethods.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\utility\Constants.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\utility\PropertyReader.java
+C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\pages\SeleniumExamplePageDataDriven.java
+C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\stepDefinitions\DataDrivenNormal_SD.java
 C:\Users\sireesh\eclipse-workspace\practicingProject99\src\test\java\commonMethods\SeleniumSPecificMethods.java

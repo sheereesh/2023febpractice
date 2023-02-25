@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: testRuns.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.573 s - in testRuns.TestRunner
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.103 s <<< FAILURE! - in testRuns.TestRunner
+feature1.scenario1 #2  Time elapsed: 0.186 s  <<< FAILURE!
+org.junit.ComparisonFailure: window titleWeb Examples - CrossBrowserTesting.comdoes not match expected:<[Web Examples - CrossBrowserTesting.com]> but was:<[Selenium Test Example Page]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at commonMethods.SeleniumSPecificMethods.validatePageTitle(SeleniumSPecificMethods.java:34)
+	at stepDefinitions.DataDriven_SD.user_is_page(DataDriven_SD.java:15)
+	at ✽.user is "Web Examples - CrossBrowserTesting.com" page(file:///C:/Users/sireesh/eclipse-workspace/practicingProject99/src/test/resources/features/datadriven_Feature1.feature:5)
+
+feature1.scenario1 #3  Time elapsed: 0.145 s  <<< FAILURE!
+org.junit.ComparisonFailure: window titleWeb Examples - CrossBrowserTesting.comdoes not match expected:<[Web Examples - CrossBrowserTesting.com]> but was:<[Selenium Test Example Page]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at commonMethods.SeleniumSPecificMethods.validatePageTitle(SeleniumSPecificMethods.java:34)
+	at stepDefinitions.DataDriven_SD.user_is_page(DataDriven_SD.java:15)
+	at ✽.user is "Web Examples - CrossBrowserTesting.com" page(file:///C:/Users/sireesh/eclipse-workspace/practicingProject99/src/test/resources/features/datadriven_Feature1.feature:5)
+
